@@ -8,3 +8,9 @@ Homebrew tap repository for [daylog](https://github.com/notnmeyer/daylog-cli).
 brew tap notnmeyer/daylog-cli
 brew install daylog
 ```
+
+or concisely,
+
+```
+brew install notnmeyer/daylog-cli/daylog
+```
