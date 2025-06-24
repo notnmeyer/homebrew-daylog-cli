@@ -5,20 +5,20 @@
 class Daylog < Formula
   desc "Takes notes while you work in your editor of choice."
   homepage "https://github.com/notnmeyer/daylog-cli"
-  version "0.5.2"
+  version "0.5.3"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/notnmeyer/daylog-cli/releases/download/v0.5.2/daylog-cli_Darwin_x86_64.tar.gz"
-      sha256 "784dc68179f4373081c8de25d18dc10d154919397b0f4c78e51a122a374008cf"
+      url "https://github.com/notnmeyer/daylog-cli/releases/download/v0.5.3/daylog-cli_Darwin_x86_64.tar.gz"
+      sha256 "46c6dd0da2fa8312631c9d6d26f3118490873f13bbf331ab86466a3a0093cfef"
 
       def install
         bin.install "daylog"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/notnmeyer/daylog-cli/releases/download/v0.5.2/daylog-cli_Darwin_arm64.tar.gz"
-      sha256 "ffb0bb4f1c472e705c3443a3d5edae8caf25f0857bdfd2b2737d314cebbd1d1e"
+      url "https://github.com/notnmeyer/daylog-cli/releases/download/v0.5.3/daylog-cli_Darwin_arm64.tar.gz"
+      sha256 "987d36a625d5f5454fc7f5af6ae0bc408d02910ee42ce35af108f983f6a08491"
 
       def install
         bin.install "daylog"
@@ -28,15 +28,15 @@ class Daylog < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/notnmeyer/daylog-cli/releases/download/v0.5.2/daylog-cli_Linux_x86_64.tar.gz"
-      sha256 "1732d891febb78233d5f49406e71878546d082f382c60a59728e44c25a247cea"
+      url "https://github.com/notnmeyer/daylog-cli/releases/download/v0.5.3/daylog-cli_Linux_x86_64.tar.gz"
+      sha256 "5b9b93adb25ee2e429b762a590371999484cea14d42392864abf6382ed00c771"
       def install
         bin.install "daylog"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/notnmeyer/daylog-cli/releases/download/v0.5.2/daylog-cli_Linux_arm64.tar.gz"
-      sha256 "e455d6a2006f95bb87ee194d0072422d883c199b0596c2dbf72b8fe556ce9dad"
+      url "https://github.com/notnmeyer/daylog-cli/releases/download/v0.5.3/daylog-cli_Linux_arm64.tar.gz"
+      sha256 "cd4cd8d2189d3299c54d1a2b9865948820e7197ef35f67d44174074ea34faa29"
       def install
         bin.install "daylog"
       end
