@@ -5,20 +5,20 @@
 class Daylog < Formula
   desc "Takes notes while you work in your editor of choice."
   homepage "https://github.com/notnmeyer/daylog-cli"
-  version "0.9.1"
+  version "0.9.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/notnmeyer/daylog-cli/releases/download/v0.9.1/daylog-cli_Darwin_x86_64.tar.gz"
-      sha256 "aee36d151113abee60409cdea2d4faebb65b1f85401748690a7da3709e42e843"
+      url "https://github.com/notnmeyer/daylog-cli/releases/download/v0.9.2/daylog-cli_Darwin_x86_64.tar.gz"
+      sha256 "f5a093a387fbe3d658c3525f3ffeec314a78386a07faf6445feb6b4fd7479bdb"
 
       define_method(:install) do
         bin.install "daylog"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/notnmeyer/daylog-cli/releases/download/v0.9.1/daylog-cli_Darwin_arm64.tar.gz"
-      sha256 "0ad33658c621806f17cba9d2f4b78b4ba67f7b4edadb5eaed0ec685bc1d9d7ed"
+      url "https://github.com/notnmeyer/daylog-cli/releases/download/v0.9.2/daylog-cli_Darwin_arm64.tar.gz"
+      sha256 "555f28b384b4191cc6c87d90fa1b7ac65e806eccae30cad497da0fed4f54a5c6"
 
       define_method(:install) do
         bin.install "daylog"
@@ -28,15 +28,15 @@ class Daylog < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/notnmeyer/daylog-cli/releases/download/v0.9.1/daylog-cli_Linux_x86_64.tar.gz"
-      sha256 "955132adaa404e146e881330ffdf02602eecb6dfaaafca0d612ca4136bbc458f"
+      url "https://github.com/notnmeyer/daylog-cli/releases/download/v0.9.2/daylog-cli_Linux_x86_64.tar.gz"
+      sha256 "d494206d91f3564104511404d01914bf72f1380c56116b6c75ca80162a436c53"
       define_method(:install) do
         bin.install "daylog"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/notnmeyer/daylog-cli/releases/download/v0.9.1/daylog-cli_Linux_arm64.tar.gz"
-      sha256 "82319c8226b2fedbe1c8d60d90d9338a27bbb4c079b3ba82d4fdba8d7b52c8f7"
+      url "https://github.com/notnmeyer/daylog-cli/releases/download/v0.9.2/daylog-cli_Linux_arm64.tar.gz"
+      sha256 "3cb1af94aa1b4f9f411383790b5f23f09fda741a13d0dec0e467dc2512245f56"
       define_method(:install) do
         bin.install "daylog"
       end
